@@ -1,0 +1,199 @@
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Markazi Text', serif;
+*/
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root{
+   font-size: 16px; 
+}
+
+/*CLASES UTILITITARIAS*/
+
+.btn{
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255); 
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+/* FIN CLASES UTILITITARIAS*/
+
+/* Header */
+
+.header{
+    background-color: black;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.header__logo{
+    max-width: 250px;
+}
+
+.header__anchor{
+    background-color: black;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header__anchor--activo{
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+ul.header__list {
+    display: flex;
+    flex-direction: row;
+}
+
+li.header__item {
+    background-color: black;
+    padding: 1rem 0.5rem;
+    border-radius: 1px;
+    border: 1px solid;
+    color: white;
+}
+
+
+/* Fin Header */
+
+/* Hero */
+
+main{
+    height: 800px;
+
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/hero-coca-cola-longrun.jpg"); /* agrega sombra y resalta elementos del hero */
+    font-size: 1rem;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    background-position: center bottom;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__heading{
+    color: red;
+    font-size: 3rem;
+}
+
+.hero__slogan{
+    font-size: 1.5rem;
+    color: white;
+    align-self: center;
+}
+
+/* Fin Hero */
+
+
+/* Info y map */
+
+.infoymap {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.titleandinfo{
+    padding-left: 20px;
+}
+
+.infoymap__text {
+    margin-bottom: 5rem;
+    font-size: 90%;
+}
+
+.infoymap__map {
+    margin-bottom: 2rem;
+    max-width: 850px;
+    padding-left: 150px;
+    padding-right: 20px;
+}
+
+/* Fin Info y map */
+
+
+/* Proximos eventos */
+
+.proximoseventos {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.card__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0 20px;
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.cardcontainer {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+
+/* Fin Proximos eventos */
