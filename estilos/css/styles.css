@@ -42,6 +42,16 @@ p{
     margin-bottom: 1rem;
 }
 
+@media (max-width: 767px) {
+    .text-xs-center {
+      text-align: center;
+    } 
+    .justify-content-center-xs {
+        justify-content: center!important;
+    }
+  }
+
+
 /* FIN CLASES UTILITITARIAS*/
 
 /* Header */
@@ -59,6 +69,13 @@ p{
 .header__logo{
     max-width: 250px;
 }
+
+@media all and (max-width: 768px) {
+    .header__logo{
+        max-width: 200px;
+    }
+}
+
 
 .header__anchor{
     background-color: black;
@@ -113,6 +130,7 @@ main{
     flex-direction: column;
 }
 
+
 .hero__heading{
     color: red;
     font-size: 3rem;
@@ -124,19 +142,28 @@ main{
     align-self: center;
 }
 
+@media all and (max-width: 768px) {
+    .hero__heading{
+        font-size: 2rem;
+    }
+    .hero__slogan{
+        font-size: 1rem;
+    }
+}
+
 /* Fin Hero */
 
 
 /* Info y map */
 
-.infoymap {
+ .infoymap {
     display: flex;
     flex-direction: row;
     padding: 4rem;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    
+
 }
 
 .titleandinfo{
@@ -150,9 +177,60 @@ main{
 
 .infoymap__map {
     margin-bottom: 2rem;
-    max-width: 850px;
-    padding-left: 150px;
-    padding-right: 20px;
+    max-width: 650px;
+    overflow: hidden;
+}
+
+.gap-top{
+    padding-top: 2rem;
+}
+
+@media all and (max-width: 768px) {
+    .gap-xs-top{
+        padding-top: 1.2rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .infoymap {
+        flex-direction: column;
+    }
+    .infoymap__text{
+        font-size: 1rem;
+    }
+    .infoymap__map {
+        max-width: 450px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .infoymap {
+        flex-direction: column;
+    }
+    .infoymap__text{
+        font-size: 1rem;
+    }
+    .infoymap__map {
+        max-width: 350px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .infoymap {
+        flex-direction: column;
+    }
+    .infoymap__text{
+        font-size: 1rem;
+    }
+    .infoymap__map {
+        max-width: 300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 /* Fin Info y map */
@@ -168,6 +246,12 @@ main{
     justify-content: space-between;
     position: relative;
     
+}
+
+@media all and (max-width: 320px) {
+    .proximoseventos {
+        padding: 2rem;
+    }
 }
 
 .card__wrapper{
@@ -195,5 +279,14 @@ main{
     text-align: center;
 }
 
+/* Añado responsive de cards */
+
+@media all and (max-width: 320px) {
+    .cardcontainer {
+        padding: 2px 16px;
+        text-align: center;
+    }
+    
+}
 
 /* Fin Proximos eventos */
