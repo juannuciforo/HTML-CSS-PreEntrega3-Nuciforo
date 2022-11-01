@@ -54,7 +54,7 @@ p {
   height: 800px; }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../img/hero-coca-cola-longrun.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/hero-coca-cola-longrun.jpg");
   /* agrega sombra y resalta elementos del hero */
   font-size: 1rem;
   height: 80vh;
