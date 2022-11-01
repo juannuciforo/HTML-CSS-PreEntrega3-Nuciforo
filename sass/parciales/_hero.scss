@@ -1,0 +1,36 @@
+.main__hero_container{
+    height: 800px;
+
+}
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/hero-coca-cola-longrun.jpg"); /* agrega sombra y resalta elementos del hero */
+    font-size: 1rem;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    background-position: center bottom;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__heading{
+        color: red;
+        font-size: 3rem;
+    }
+    &__slogan{
+        font-size: 1.5rem;
+        color: white;
+        align-self: center;
+    }
+    @media all and (max-width: 768px) {
+        &__heading{
+            font-size: 2rem;
+        }
+        &__slogan{
+            font-size: 1rem;
+        }
+    }
+}

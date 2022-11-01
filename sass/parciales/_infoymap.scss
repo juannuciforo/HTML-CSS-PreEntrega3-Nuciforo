@@ -1,0 +1,60 @@
+.infoymap {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .titleandinfo{
+        padding-left: 20px;
+    }
+    &__text {
+        margin-bottom: 5rem;
+        font-size: 90%;
+    }
+    &__map {
+        margin-bottom: 2rem;
+        max-width: 650px;
+        overflow: hidden;
+    }
+    @media all and (max-width: 1024px) {
+        & {
+            flex-direction: column;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+        &__map {
+            max-width: 450px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    @media all and (max-width: 768px) {
+        & {
+            flex-direction: column;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+        &__map {
+            max-width: 350px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    
+    @media all and (max-width: 320px) {
+        & {
+            flex-direction: column;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+        &__map {
+            max-width: 300px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

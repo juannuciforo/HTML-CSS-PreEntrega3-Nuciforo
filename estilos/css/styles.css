@@ -11,14 +11,6 @@ font-family: 'Markazi Text', serif;
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
-:root{
-    font-size: 16px; 
-}
-
 /*CLASES UTILITITARIAS*/
 
 .btn{
@@ -44,13 +36,23 @@ p{
 
 @media (max-width: 767px) {
     .text-xs-center {
-      text-align: center;
-    } 
-    .justify-content-center-xs {
-        justify-content: center!important;
+        text-align: center;
     }
-  }
 
+    .justify-content-center-xs {
+        justify-content: center !important;
+    }
+}
+
+.gap-top{
+    padding-top: 2rem;
+}
+
+@media all and (max-width: 768px) {
+    .gap-xs-top{
+        padding-top: 1.2rem;
+    }
+}
 
 /* FIN CLASES UTILITITARIAS*/
 
@@ -76,39 +78,11 @@ p{
     }
 }
 
-
-.header__anchor{
-    background-color: black;
-    color: red;
-    text-decoration: none;
-    text-align: center;
-}
-
-.header__anchor--activo{
-    color: white;
-    text-decoration: none;
-    flex-wrap: wrap;
-}
-
-ul.header__list {
-    display: flex;
-    flex-direction: row;
-}
-
-li.header__item {
-    background-color: black;
-    padding: 1rem 0.5rem;
-    border-radius: 1px;
-    border: 1px solid;
-    color: white;
-}
-
-
 /* Fin Header */
 
 /* Hero */
 
-main{
+.main__hero_container{
     height: 800px;
 
 }
@@ -156,7 +130,7 @@ main{
 
 /* Info y map */
 
- .infoymap {
+.infoymap {
     display: flex;
     flex-direction: row;
     padding: 4rem;
@@ -179,16 +153,6 @@ main{
     margin-bottom: 2rem;
     max-width: 650px;
     overflow: hidden;
-}
-
-.gap-top{
-    padding-top: 2rem;
-}
-
-@media all and (max-width: 768px) {
-    .gap-xs-top{
-        padding-top: 1.2rem;
-    }
 }
 
 @media all and (max-width: 1024px) {
